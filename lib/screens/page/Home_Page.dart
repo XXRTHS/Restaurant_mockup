@@ -1,10 +1,15 @@
+import 'dart:convert';
+
+import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurant_web/color/color.dart';
 import 'package:badges/badges.dart' as badges;
+import 'package:restaurant_web/model/product.dart';
 import 'package:restaurant_web/widget/CategoriesWidget.dart';
 import 'package:restaurant_web/widget/ItemsWidget.dart';
 import 'package:restaurant_web/widget/PopularWidget.dart';
+import 'package:restaurant_web/widget/callApi.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -14,8 +19,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: AppColors.paraColor,
       body: SafeArea(
