@@ -1,87 +1,87 @@
 {
   "product": [
     {
-      "id" : "1",
+      "id" : 1,
       "name" : "Soft cookies set",
-      "price" : "189",
-      "rating" : "4.5",
+      "price" : 189,
+      "rating" : 4.5,
       "description" : "This set have 5 cookies flavor. soft and full of butter. Must try "
     },
     {
-      "id" : "2",
+      "id" : 2,
       "name" : "Banoffee",
-      "price" : "79",
-      "rating" : "4.8",
+      "price" : 79,
+      "rating" : 4.8,
       "description" : "Banoffee pie is a British dessert pie made from bananas, whipped cream, and a thick caramel sauce (made from boiled condensed milk, or milk jam), combined either on a buttery biscuit base or one made from crumbled biscuits and butter. Some versions of the recipe include chocolate, coffee, or both."
     },
     {
-      "id" : "3",
+      "id" : 3,
       "name" : "Blueberry cheese pie",
-      "price" : "89",
-      "rating" : "4.3",
+      "price" : 89,
+      "rating" : 4.3,
       "description" : "This blueberry cream cheese pie combines a crunchy buttery graham cracker crust, mousse-like cheesecake filling, and homemade blueberry topping. The filling isn't as heavy as pudding-based cream pies like coconut cream pie. Rather, it's light and whipped like no-bake cheesecake."
     },
     {
-      "id" : "4",
+      "id" : 4,
       "name" : "Caramel milk",
-      "price" : "49",
-      "rating" : "4.6",
+      "price" : 49,
+      "rating" : 4.6,
       "description" : " a glass of milk and some caramel syrup, creamy and sweet"
     },
     {
-      "id" : "5",
+      "id" : 5,
       "name" : "Chocolate chip soft cookie",
-      "price" : "59",
-      "rating" : "4.9",
+      "price" : 59,
+      "rating" : 4.9,
       "description" : "a drop cookie that features chocolate chips or chocolate morsels as its distinguishing ingredient. Chocolate chip cookies are claimed to have originated in the United States"
     },
     {
-      "id" : "6",
+      "id" : 6,
       "name" : "Choco strawberry milk",
-      "price" : "59",
-      "rating" : "4.2",
+      "price" : 59,
+      "rating" : 4.2,
       "description" : "a combination of choco powder and strawberry, that make you feel sweet, sour, bitter and creamy milk"
     },
     {
-      "id" : "7",
+      "id" : 7,
       "name" : "M&M chocolate soft cookie",
-      "price" : "69",
-      "rating" : "4.6",
+      "price" : 69,
+      "rating" : 4.6,
       "description" : "With a soft and chewy interior and slightly crispy exterior, it's the perfect balance of texture with fudgy flavor in every bite. The addition of M&M candies not only adds a burst of color but also introduces a sweet and satisfying crunch"
     },
     {
-      "id" : "8",
+      "id" : 8,
       "name" : "Marshmallow and cornflake vanilla soft cookie",
-      "price" : "69",
-      "rating" : "4.3",
+      "price" : 69,
+      "rating" : 4.3,
       "description" : "a combination of vanilla soft cookie marshmallow and cornflake, it's soft and crunchy in the same time when you bite"
     },
     {
-      "id" : "9",
+      "id" : 9,
       "name" : "Almond fleck green tea soft cookie",
-      "price" : "79",
-      "rating" : "4.8",
+      "price" : 79,
+      "rating" : 4.8,
       "description" : "a combination of green tea soft cookie  and almond flake, when you bite, you will smell the Green tea anf feel a almond fleck"
     },
     {
-      "id" : "10",
+      "id" : 10,
       "name" : "Nutella filling with chocolate soft cookie",
-      "price" : "89",
-      "rating" : "4.9",
+      "price" : 89,
+      "rating" : 4.9,
       "description" : "chewy edges, soft centers, sea salt, and a Nutella swirl, these cookies are simply irresistible."
     },
     {
-      "id" : "11",
+      "id" : 11,
       "name" : "Thai tea",
-      "price" : "59",
-      "rating" : "4.9",
+      "price" : 59,
+      "rating" : 4.9,
       "description" : "made from Ceylon black tea, milk, and sugar. Thai tea as it is consumed in Thailand is not typically brewed with spices,Thai tea is popular in Southeast Asia and is served in many restaurants that serve Thai food. When served cold it is known as Thai iced tea"
     },
     {
-      "id" : "12",
+      "id" : 12,
       "name" : "Red velvet cream cheese soft cookie",
-      "price" : "99",
-      "rating" : "4.9",
+      "price" : 99,
+      "rating" : 4.9,
       "description" : "Red Velvet Cookies With Cream Cheese Filling. These moist and chewy red velvet cookies are stuffed with a light and fluffy cream cheese filling and are very similar to my chewy double chocolate chip cookies but with the flavor and texture of my authentic red velvet cake!"
     }
   ]

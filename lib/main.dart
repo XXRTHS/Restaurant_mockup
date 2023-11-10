@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:restaurant_web/screens/page/Home_Page.dart';
 import 'package:restaurant_web/screens/page/SplashScreen.dart';
 import 'package:restaurant_web/screens/page/forgetPassword.dart';
+import 'package:restaurant_web/screens/page/itemPage.dart';
 import 'package:restaurant_web/screens/page/signIn.dart';
 import 'package:restaurant_web/screens/page/signUp.dart';
+import 'package:restaurant_web/widget/BottomCartSheet.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,6 +35,9 @@ class MyApp extends StatelessWidget {
       "logIn": (contex) => logIn(),
       "forgetPassword": (contex) => forgetPassword(),
       "homePage": (contex) => MyHomePage(),
+      "itemPage": (contex) => itemPage(),
+      "BottomCartSheet": (contex) => BottomCartSheet(),
+
     });
   }
 }

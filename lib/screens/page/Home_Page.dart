@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:html';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
@@ -6,8 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:restaurant_web/color/color.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:restaurant_web/model/product.dart';
+import 'package:restaurant_web/widget/BottomCartSheet.dart';
 import 'package:restaurant_web/widget/CategoriesWidget.dart';
-import 'package:restaurant_web/widget/ItemsWidget.dart';
 import 'package:restaurant_web/widget/PopularWidget.dart';
 import 'package:restaurant_web/widget/callApi.dart';
 
@@ -54,12 +55,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           badgeColor: Colors.red,
                         ),
                         badgeContent: Text(
-                          '3',
+                          '1',
                           style: TextStyle(
                               fontFamily: 'Nunito', color: Colors.white),
                         ),
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, "BottomCartSheet");
+                          },
                           child: Icon(
                             CupertinoIcons.cart,
                             size: 30,
@@ -137,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     CategoriesWidget(),
                     PopularItemWidget(),
-                    ItemsWidget(),
+                    CallApi(),
                   ],
                 ),
               ),

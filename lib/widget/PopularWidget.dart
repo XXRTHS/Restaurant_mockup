@@ -34,7 +34,7 @@ class PopularItemWidget extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              for (int i = 1; i <= 12; i++)
+              for (int i = 0; i < 12; i++)
                 Container(
                   margin: EdgeInsets.all(10),
                   padding: EdgeInsets.all(5),

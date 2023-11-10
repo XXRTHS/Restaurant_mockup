@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -100,7 +99,7 @@ class _CallApiState extends State<CallApi> {
             childAspectRatio: 0.8,
             shrinkWrap: true,
             children: [
-              for (int i = 1; i <= 12; i++)
+              for (int i = 0; i < 12; i++)
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   decoration: BoxDecoration(
@@ -116,13 +115,15 @@ class _CallApiState extends State<CallApi> {
                   child: Column(
                     children: [
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, "itemPage");
+                        },
                         child: Container(
                           margin: EdgeInsets.all(10),
                           child: Image.asset(
                             "images/$i.jpg",
-                            height: 110,
-                            width: 110,
+                            height: 120,
+                            width: 120,
                           ),
                         ),
                       ),
@@ -132,13 +133,17 @@ class _CallApiState extends State<CallApi> {
                           alignment: Alignment.centerLeft,
                           child: Row(
                             children: [
-                              Text(
-                                _productItemList![i].name.toString(),
-                                style: TextStyle(
-                                    fontFamily: 'Nunito',
-                                    fontSize: 22,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black87),
+                              Expanded(
+                                child: Text(
+                                  _productItemList![i].name.toString(),
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 2,
+                                  style: TextStyle(
+                                      fontFamily: 'Nunito',
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black87),
+                                ),
                               ),
                             ],
                           ),
@@ -154,11 +159,40 @@ class _CallApiState extends State<CallApi> {
                                 _productItemList![i].rating.toString(),
                                 style: TextStyle(
                                     fontFamily: 'Nunito',
-                                    fontSize: 16,
+                                    fontSize: 14,
                                     color: Colors.black87),
                               ),
                             ],
                           ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(vertical: 5),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              _productItemList![i].price.toString() + ' -. THB',
+                              style: TextStyle(
+                                  fontFamily: 'Nunito',
+                                  fontSize: 18,
+                                  color: Colors.black87),
+                            ),
+                            InkWell(
+                              onTap: () {},
+                              child: Container(
+                                padding: EdgeInsets.all(4),
+                                decoration: BoxDecoration(
+                                  color: AppColors.paraColor,
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Icon(
+                                  Icons.add_shopping_cart,
+                                  color: AppColors.textColor,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       )
                     ],
@@ -169,6 +203,8 @@ class _CallApiState extends State<CallApi> {
         ],
       );
     }
-    return Scaffold(body: body);
+    return Column(
+      children: [body],
+    );
   }
 }
